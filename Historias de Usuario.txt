@@ -1,0 +1,30 @@
+Historia de Usuario
+
+ADMINISTRADOR
+1 agregar residencia
+2 eliminar residencia
+3 modificar residencia
+4 listar clientes
+5 ingresar monto de subasta (duda, es una historia o va en modificar residencia)
+6 ingresar costo del credito (duda)
+
+CLIENTE ESTANDAR
+7 reservar residencia subastada (hasta 2)
+8 pasar a premium  
+
+CLIENTE PREMIUM 
+9 reservar residencia (hasta 2)
+10 pasar a estandar 
+
+LOS 2 CLIENTES
+11 iniciar sesion
+12 cerrar sesion
+13 modificar perfil
+14 eliminar usuario
+15 registrar usuario
+16 cancelar reservacion
+17 consultar residencia
+18 realizar pago con tarjeta
+19 consultar creditos (duda)
+20 comprar credito
+21 calificar residencia
