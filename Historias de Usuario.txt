@@ -6,26 +6,26 @@ ADMINISTRADOR
 5 ingresar monto de subasta (duda, es una historia o va en modificar residencia)
 6 ingresar costo del credito (duda)
 7 modificar abono mensual
-
+8 desactivar/activar cliente
 
 CLIENTE ESTANDAR
-8 reservar residencia subastada (hasta 2)
-9 pasar a premium  
+9 reservar residencia subastada (hasta 2)
+10 pasar a premium  
 
 CLIENTE PREMIUM 
-10 reservar residencia (hasta 2)
-11 pasar a estandar 
+11 reservar residencia (hasta 2)
+12 pasar a estandar 
 
 LOS 2 CLIENTES
-12 iniciar sesion
-13 cerrar sesion
-14 modificar perfil
-15 eliminar usuario
-16 registrar usuario
-17 ofertar residencia
-18 cancelar reservacion
-19 consultar residencia
-20 realizar pago con tarjeta
-21 consultar creditos (duda)
-22 comprar credito
-23 calificar residencia
+13 iniciar sesion
+14 cerrar sesion
+15 modificar perfil
+16 eliminar usuario
+17 registrar usuario
+18 ofertar residencia
+19 cancelar reservacion
+20 consultar residencia
+21 realizar pago con tarjeta
+22 consultar creditos (duda)
+23 comprar credito
+24 calificar residencia
