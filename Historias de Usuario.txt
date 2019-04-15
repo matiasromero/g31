@@ -1,5 +1,5 @@
 ADMINISTRADOR
-1 agregar residencia
+1 agregar residencia  X
 2 eliminar residencia
 3 modificar residencia
 4 listar clientes
@@ -17,11 +17,11 @@ CLIENTE PREMIUM
 12 pasar a estandar 
 
 LOS 2 CLIENTES
-13 iniciar sesion
-14 cerrar sesion
-15 modificar perfil
-16 eliminar usuario
-17 registrar usuario
+13 iniciar sesion  X   
+14 cerrar sesion 
+15 modificar perfil  X
+16 eliminar usuario  X
+17 registrar usuario  X
 18 ofertar residencia
 19 cancelar reservacion
 20 consultar residencia
@@ -29,3 +29,91 @@ LOS 2 CLIENTES
 22 consultar creditos (duda)
 23 comprar credito
 24 calificar residencia
+
+ID: modificar perfil
+TITULO: Como usuario de Home switch Home quiero poder modificar los datos de mi perfil
+REGLADE NEGOCIO: estar registrado en el sistema 
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El usuario modifica su perfil correctamente 
+   DADO QUE: Hugo quiere modificar los datos de su perfil nombre: Hugo, apellido: Contrera, dni: 34583402
+   CUANDO: presiona el boton guardar
+   ENTONCES: el sistema le informa que los datos se actualizaron correctamente
+
+   ID: registrar usuario 
+TITULO: Como usuario de Home switch Home quiero poder registrarme en la pagina para poder hacer recervas de residencias
+REGLA DE NEGOCIO: no estar registrado, el usuario debe ser mayor de 18 años
+DEPENDENCIA: ninguna 
+CRITERIO DE ACEPTACIÓN  
+ESCENARIO 1: La persona se registra en el sistema de forma correcta 
+  DADO QUE: Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave:xxxxx1234ABC, nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
+  CUANDO: presiona el boton 'registrar'
+  ENTONCES: el sistema le informa que se registro correctamente
+ESCENARIO 2: la persona no se registra en el sistema por que el o los campo/s estan vacios
+  DADO QUE: Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave: , nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
+  CUANDO: presiona el boton 'registrar'
+  ENTONCES: el sistema le informa que no se completo el o los campo/s obligatorio/s para registrarse, se informa cuales
+ESCENARIO 3: la persona no se registra en el sistema por que ya se encuentra registrada
+  DADO QUE:Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave:xxxxx1234ABC, nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
+  CUANDO: presiona el boton 'registrar'
+  ENTONCES: el sistema le informa que ya se encuentra registrado en el sistema
+ESCENARIO 4: la persona no se puede registrar por que es menor de edad
+  DADO QUE:Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave:xxxxx1234ABC, nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
+  CUANDO:presiona el boton 'registrar'
+  ENTONCES: el sistema le informa que no se puede registrar por que es menor de edad
+
+  ID: eliminar usuario
+TITULO: Como usuario de Home switch Home quiero poder eliminar mi usuario 
+REGLA DE NEGOCIO: el usuario tiene que estar registrado  
+DEPENDENCIA: registrar usuario 
+CRITERIO DE ACEPTACION 
+ESCENARIO 1: Un usuario elimina su usuario del Sistema exitosamente
+  DADO QUE: Hugo Quiere eliminar su usuario
+  CUANDO: Hugo presiona el boton eliminar usuario 
+  ENTONCES: El sistema informa que el usuario fue borrado. 
+
+  ID: iniciar sesión 
+TITULO: Como usuario de Home switch Home quiero ingresar a la página para poder operar en ella. 
+REGLA DE NEGOCIO: estar registrado en el sistema. 
+DEPENDENCIA: registrar usuario 
+CRITERIO DE ACEPTACIÓN 
+ESCENARIO 1: Un usuario inicia sesion ingresando su usuario y clave correctamente
+  DADO QUE: Juan Perez quiere ingresar a la página y completa la siguiente información usuario: juan89 y clave:12324ABC 
+  CUANDO: presiona el botón 'iniciar sesión'. 
+  ENTONCES: el sistema valida sus datos y le permite ingresar a su cuenta.
+ESCENARIO 2: Un usuario no puede iniciar sesión por que ingresa su usuario incorrectamente
+  DADO QUE: Juan Perez quiere ingresar a la página y completa la siguiente información usuario: juan99 y clave:12324ABC 
+  CUANDO: presiona el botón 'iniciar sesión'.
+  ENTONCES: el sistema le informa que su USUARIO es incorrecto y vuelve a la pantalla de iniciar sesion
+ESCENARIO 3: Un usuario no puede iniciar sesión por que ingresa su clave incorrectamente
+  DADO QUE: Juan Perez quiere ingresar a la página y completa la siguiente información usuario: juan89 y clave:111234ABC 
+  CUANDO: presiona el botón 'iniciar sesión'.
+  ENTONCES: el sistema le informa que su CLAVE es incorrecta y vuelve a la pantalla de iniciar sesion
+
+
+   ID: agregar residencia
+TITULO: Como administrador de Home switch Home quiero poder agregar las residencias que voy a alquilar semanalmente 
+REGLADE NEGOCIO: no tener ya registrada la residencia
+DEPENDENCIA: iniciar sesion
+CRITERIO DE ACEPTACION
+ESCENARIO 1: el administrador registra una residencia para alquilar
+   DADO QUE: Johana completa la informacion de su residencia direccion: calle2 n°1392, habitaciones:2   
+   CUANDO: se guardan los datos de la residencia
+   ENTONCES: el sistema informa que los datos se guardaron correctamente
+ESCENARIO 2: el administrador no puede registrar la residencia
+   DADO QUE: Johana completa la informacion de su residencia direccion: calle2 n°1392,
+   CUANDO: se guardan los datos de la residencia
+   ENTONCES: el sistema informa que la residencia ya se encuentra cargada en el sistema
+
+
+   ID:
+TITULO:
+REGLADE NEGOCIO:
+DEPENDENCIA:
+CRITERIO DE ACEPTACION
+ESCENARIO 1:
+   DADO QUE:
+   CUANDO:
+   ENTONCES:
+
+
