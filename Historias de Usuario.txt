@@ -1,12 +1,12 @@
-ADMINISTRADOR
+﻿ADMINISTRADOR
 1 agregar residencia  X
-2 eliminar residencia
-3 modificar residencia
-4 listar clientes
+2 eliminar residencia X
+3 modificar residencia X
+4 listar clientes X
 5 ingresar monto de subasta (duda, es una historia o va en modificar residencia)
 6 ingresar costo del credito (duda)
 7 modificar abono mensual
-8 desactivar/activar cliente
+8 desactivar/activar cliente X
 
 CLIENTE ESTANDAR
 9 reservar residencia subastada (hasta 2)
@@ -102,18 +102,54 @@ ESCENARIO 1: el administrador registra una residencia para alquilar
    ENTONCES: el sistema informa que los datos se guardaron correctamente
 ESCENARIO 2: el administrador no puede registrar la residencia
    DADO QUE: Johana completa la informacion de su residencia direccion: calle2 n°1392,
-   CUANDO: se guardan los datos de la residencia
+   CUANDO: no se guardan los datos de la residencia
    ENTONCES: el sistema informa que la residencia ya se encuentra cargada en el sistema
 
 
-   ID:
-TITULO:
-REGLADE NEGOCIO:
-DEPENDENCIA:
+   ID: eliminar residencia
+TITULO: Como administrador de Home switch Home quiero poder eliminar alguna residencia del sistema
+REGLADE NEGOCIO: usuario perfil administrador y la residencia tiene que existir en el sistema
+DEPENDENCIA: iniciar sesión
 CRITERIO DE ACEPTACION
-ESCENARIO 1:
-   DADO QUE:
-   CUANDO:
-   ENTONCES:
+ESCENARIO 1: el administrador selecciona una residencia y presiona eliminar
+   DADO QUE: Pedro selecciona una residencia y presiona eliminar
+   CUANDO: se elimina la residencia del sistema
+   ENTONCES: se informa que la residencia ha sido eliminada
+
+   ID: modificar residencia
+TITULO: Como administrador de Home switch Home quiero poder modificar alguna residencia del sistema
+REGLADE NEGOCIO: usuario perfil administrador, la residencia tiene que existir en el sistema y los nuevos datos no tienen que coincidir con una ya existente
+DEPENDENCIA: iniciar sesion
+CRITERIO DE ACEPTACION
+ESCENARIO 1: el administrador modifica una residencia para alquilar
+   DADO QUE: Luis modifica la informacion de una residencia con direccion: calle2 n°1392
+   CUANDO: se guardan los datos de la residencia
+   ENTONCES: el sistema informa que los datos se modificaron correctamente
+ESCENARIO 2: el administrador no puede confirmar la modificacion de la residencia
+   DADO QUE: Luis modifica la informacion de una residencia con direccion: calle2 n°1392, la cual ya esta cargada en otra residencia
+   CUANDO: no se guarda la modificacion de la residencia
+   ENTONCES: el sistema informa que la residencia no ha sido modificada
+
+
+ID: listar clientes
+TITULO: Como administrador de Home switch Home quiero poder ver la lista de clientes del sistema
+REGLADE NEGOCIO: usuario perfil administrador
+DEPENDENCIA: iniciar sesion
+CRITERIO DE ACEPTACION
+ESCENARIO 1: el administrador se dirige a la sección de "Clientes"
+   DADO QUE: Fernando accede a la sección "clientes"
+   CUANDO: se listan todos los clientes con sus datos
+   ENTONCES: el sistema muestra una grilla en los cuales las filas son clientes y las columnas las diferentes propiedades de los mismos.
+
+   ID: desactivar/activar cliente
+TITULO: Como administrador de Home switch Home quiero poder activar o desactivar un cliente del sistema
+REGLADE NEGOCIO: usuario perfil administrador
+DEPENDENCIA: iniciar sesion, listar clientes
+CRITERIO DE ACEPTACION
+ESCENARIO 1: el administrador presiona la acción "activar" o "desactivar" en cada fila de la grilla de clientes
+   DADO QUE: Fernando accede a la lista de clientes y presiona activar/desactivar en la fila de un cliente
+   CUANDO: el sistema activa o desactiva el cliente seleccionado
+   ENTONCES: el sistema informa que la acción se realizó correctamente
+
 
 
