@@ -42,7 +42,7 @@ ESCENARIO 1: El usuario modifica su perfil correctamente
 
    ID: registrar usuario 
 TITULO: Como usuario de Home switch Home quiero poder registrarme en la pagina para poder hacer recervas de residencias
-REGLA DE NEGOCIO: no estar registrado, el usuario debe ser mayor de 18 años
+REGLA DE NEGOCIO: el usuario debe ser mayor de 18 años EL MAIL ES UNICO
 DEPENDENCIA: ninguna 
 CRITERIO DE ACEPTACIÓN  
 ESCENARIO 1: La persona se registra en el sistema de forma correcta 
@@ -53,7 +53,7 @@ ESCENARIO 2: la persona no se registra en el sistema por que el o los campo/s es
   DADO QUE: Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave: , nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
   CUANDO: presiona el boton 'registrar'
   ENTONCES: el sistema le informa que no se completo el o los campo/s obligatorio/s para registrarse, se informa cuales
-ESCENARIO 3: la persona no se registra en el sistema por que ya se encuentra registrada
+ESCENARIO 3: NO SE REALIZA EL REGISTRO DE LA PERSONA la persona no se registra en el sistema por que ya se encuentra registrada POR EL MAIL.
   DADO QUE:Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave:xxxxx1234ABC, nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
   CUANDO: presiona el boton 'registrar'
   ENTONCES: el sistema le informa que ya se encuentra registrado en el sistema
@@ -61,7 +61,7 @@ ESCENARIO 4: la persona no se puede registrar por que es menor de edad
   DADO QUE:Mariano completa su información personal: usuario: mariano999, clave: xxxxx1234ABC, conf_clave:xxxxx1234ABC, nombre:Mariano, apellido:Álvarez, fech_nacimiento:1990/04/11, DNI:1134234556, email:mariano.alvarez@unlp.com.ar.
   CUANDO:presiona el boton 'registrar'
   ENTONCES: el sistema le informa que no se puede registrar por que es menor de edad
-
+AGREGAR ESCENARIO CLAVE MAS DE 6 CARACTERES.
   ID: eliminar usuario
 TITULO: Como usuario de Home switch Home quiero poder eliminar mi usuario 
 REGLA DE NEGOCIO: el usuario tiene que estar registrado  
@@ -70,7 +70,7 @@ CRITERIO DE ACEPTACION
 ESCENARIO 1: Un usuario elimina su usuario del Sistema exitosamente
   DADO QUE: Hugo Quiere eliminar su usuario
   CUANDO: Hugo presiona el boton eliminar usuario 
-  ENTONCES: El sistema informa que el usuario fue borrado. 
+  ENTONCES: El sistema informa que el usuari o fue borrado. 
 
   ID: iniciar sesión 
 TITULO: Como usuario de Home switch Home quiero ingresar a la página para poder operar en ella. 
