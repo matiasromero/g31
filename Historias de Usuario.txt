@@ -151,5 +151,93 @@ ESCENARIO 1: el administrador presiona la acción "activar" o "desactivar" en ca
    CUANDO: el sistema activa o desactiva el cliente seleccionado
    ENTONCES: el sistema informa que la acción se realizó correctamente
 
+   
+   ***Pasando en limpio y como ya habíamos hablado la semana pasada... para la entrega 2 es más que suficiente que completen las historias de usuario:
+- Ingresa con un código de acceso fijo (admin) X
+- ABM de residencias (admin) YA ESTAN HECHAS!!! X
+- Crear subasta (admin) X
+- Cerrar subasta (admin) X
+- Listado de residencias (usuarios) X
+- Ver subasta (usuarios) X
+- Pujar (usuarios) duda X
 
+
+   ID: Ingresar con un codigo de acceso fijo
+TITULO: Como administrador de Home switch Home quiero poder ingresar a mi cuenta 
+REGLADE NEGOCIO: usuario perfil administrador
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El administrador inisia sesion ingresa su usuario y clave correctamente
+   DADO QUE: Johana ingresa a la pagina y completa la siguiente informacion usuario: Johana123 clave:123456
+   CUANDO: presiona el botón 'iniciar sesión'.
+   ENTONCES: el sistema valida sus datos y le permite ingresar a su cuenta.
+ESCENARIO 2: El administrador no puede iniciar sesión por que ingresa su usuario incorrectamente
+   DADO QUE: Johana ingresa a la pagina y completa la siguiente informacion usuario: Johana12354 clave:123456 
+   CUANDO: presiona el botón 'iniciar sesión'. 
+   ENTONCES: el sistema le informa que su USUARIO o CLAVE es incorrecto y vuelve a la pantalla de iniciar sesion
+ESCENARIO 3: El administrador no puede iniciar sesión por que ingresa su clave incorrectamente
+   DADO QUE: Johana ingresa a la pagina y completa la siguiente informacion usuario: Johana123 clave:1234564333
+   CUANDO: presiona el botón 'iniciar sesión'.
+   ENTONCES: el sistema le informa que su USUARIO o CLAVE es incorrecta y vuelve a la pantalla de iniciar sesion
+
+   ID: crear subasta
+TITULO: Como administrador de Home switch Home quiero poder crear una subasta
+REGLADE NEGOCIO: usuario perfil administrador
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El administrador crea una subasta correctamente
+   DADO QUE: Johana carga la informacion de la subasta fecha: 22/04/2019, residencia:casa, usuarioQueGana: hugo, estado: no finalizada
+   CUANDO: presiona el boton 'guardar'
+   ENTONCES: el sistema le informa que los datos se guardaron correctamente
+ESCENARIO 2: El administrador no puede crear la subasta por que le falto completar un campo
+  DADO QUE:Johana carga la informacion de la subasta fecha: 22/04/2019, residencia:  , usuarioQueGana: hugo, estado: no finalizada
+  CUANDO: presiona el boton 'guardar'
+  ENTONCES: el sistema le informa que le falta completar uno o mas campos
+ESCENARIO 3: El administrador no puede crear la subasta por que ya esta creada
+  DADO QUE:Johana carga la informacion de la subasta fecha: 22/04/2019, residencia:casa, usuarioQueGana: hugo, estado: no finalizada
+  CUANDO: presiona el boton 'guardar'
+  ENTONCES: el sistema le informa que la residencia ya se encuentra creada
+
+  ID: cerrar subasta
+TITULO: Como administrador de Home switch Home quiero poder cerrar una subasta
+REGLA DE NEGOCIO: usuario perfil administrador
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El administrador cierra la subasta exitosamente
+  DADO QUE: Johana quiere cerrar una subasta
+  CUANDO: cuando presiona el boton 'cerrar subasta'
+  ENTONCES: el sistema le informa que la subasta se cerro exitosamente.
+
+  
+
+   
+   ID: Listar residencias 
+TITULO: Como usuario registrado quiero ver las residencias agregadas 
+REGLA DE NEGOCIO: ninguna 
+DEPENDENCIA: iniciar sesión 
+CRITERIO DE ACEPTACIÓN 
+ESCENARIO 1: El usuario quiere ver las residencias
+  DADO QUE: Hugo ingresa en su cuenta. 
+  CUANDO: presiona el botón 'ver residencias' 
+  ENTONCES: el sistema lista todas las residencias cargadas.
+
+  ID: ver subasta
+TITULO: Como usuario registrado quiero ver la/s subasta/s que se estan realizando
+REGLA DE NEGOCIO: estar registrado en el sistema.
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El usuario quiere ver la/s subasta/s 
+  DADO QUE: Hugo ingresa en su cuenta.
+  CUANDO: presiona el botón 'ver subastas'
+  ENTONCES: el sistema le muestra la/s subasta/s que se estan realizando
+
+   ID: pujar
+TITULO: Como usuario registrado quiero poder pujar en una subasta
+REGLA DE NEGOCIO: estar registrado en el sistema.
+DEPENDENCIA: registrar usuario
+CRITERIO DE ACEPTACION
+ESCENARIO 1: El usuario quiere realizar una puja
+  DADO QUE: Hugo ingresa monto: 2000 , residencia: casa , semana: 10 
+  CUANDO: cuando presiona el boton 'pujar'
+  ENTONCES: el sistema le informa que la puja se realizo correctamente
 
