@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import About from '@/components/About'
+import SignIn from '@/components/SignIn'
+import Login from '@/components/Login'
 Vue.use(Router)
 
 export default new Router({
@@ -12,8 +13,13 @@ export default new Router({
       component: Home
     },
     {
-      path: '/acerca-de',
-      component: About
-    }
+      path: '/registrarse',
+      component: SignIn
+    },
+    {
+      path: '/iniciar-sesion',
+      component: Login
+    },
+
   ]
 })
