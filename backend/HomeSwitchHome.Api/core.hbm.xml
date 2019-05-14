@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" namespace="HomeSwitchHome.Domain.Entities" assembly="HomeSwitchHome.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Residence" table="Residences" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="Name" />
+    <property name="Code" unique="true" />
+    <property name="Description" />
+    <property name="ImageUrl" />
+    <property name="ThumbnailUrl" />
+    <property name="Price" />
+    <property name="IsAvailable" />
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="User" table="Users" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="PasswordHash" />
+    <property name="UserName" unique="true" />
+    <property name="Name" />
+    <property name="Role" />
+    <property name="IsActive" />
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="RefreshToken" table="RefreshTokens" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <many-to-one name="User" column="UserId" index="IX_RefreshToken_User" cascade="save-update, persist" foreign-key="FK_RefreshToken_User" />
+    <property name="Token" />
+    <property name="Expiration" />
+  </class>
+</hibernate-mapping>

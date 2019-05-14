@@ -1,0 +1,16 @@
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Application.deps.json
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Application.dll
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Application.pdb
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Domain.dll
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.dll
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Domain.pdb
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.pdb
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.csprojAssemblyReference.cache
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.csproj.CoreCompileInputs.cache
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.AssemblyInfoInputs.cache
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.AssemblyInfo.cs
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.csproj.CopyComplete
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.dll
+D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Application\obj\Debug\netcoreapp2.2\HomeSwitchHome.Application.pdb

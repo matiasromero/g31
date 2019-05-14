@@ -1,0 +1,8 @@
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\bin\Debug\netcoreapp2.2\CustomerTournament.Domain.deps.json
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\bin\Debug\netcoreapp2.2\CustomerTournament.Domain.dll
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\bin\Debug\netcoreapp2.2\CustomerTournament.Domain.pdb
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\obj\Debug\netcoreapp2.2\CustomerTournament.Domain.csproj.CoreCompileInputs.cache
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\obj\Debug\netcoreapp2.2\CustomerTournament.Domain.AssemblyInfoInputs.cache
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\obj\Debug\netcoreapp2.2\CustomerTournament.Domain.AssemblyInfo.cs
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\obj\Debug\netcoreapp2.2\CustomerTournament.Domain.dll
+E:\Dev\CustomTournament\customerTournament\CustomerTournament.Domain\obj\Debug\netcoreapp2.2\CustomerTournament.Domain.pdb

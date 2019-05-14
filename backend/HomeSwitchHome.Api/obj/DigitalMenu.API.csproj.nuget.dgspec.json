@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Devs-Personal\\hsh-backend\\api\\DigitalMenu.Api\\DigitalMenu.API.csproj": {}
+  },
+  "projects": {
+    "D:\\Devs-Personal\\hsh-backend\\api\\DigitalMenu.Api\\DigitalMenu.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Devs-Personal\\hsh-backend\\api\\DigitalMenu.Api\\DigitalMenu.API.csproj",
+        "projectName": "HomeSwitchHome.API",
+        "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\DigitalMenu.Api\\DigitalMenu.API.csproj",
+        "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
+        "outputPath": "D:\\Devs-Personal\\hsh-backend\\api\\DigitalMenu.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\romer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/radventure/auth/b1a62d69-b40b-4120-a5c1-67c7e94fdac7/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj": {
+                "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj"
+              },
+              "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {
+                "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj"
+              },
+              "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
+                "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.6.3, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "NetCore.AutoRegisterDi": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

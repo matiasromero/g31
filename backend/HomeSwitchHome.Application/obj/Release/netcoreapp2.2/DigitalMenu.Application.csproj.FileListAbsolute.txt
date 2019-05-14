@@ -1,0 +1,16 @@
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\DigitalMenu.Application.deps.json
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\DigitalMenu.Application.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\DigitalMenu.Application.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\DigitalMenu.Domain.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\DigitalMenu.Domain.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Application\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.csprojAssemblyReference.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.csproj.CoreCompileInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.AssemblyInfoInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.AssemblyInfo.cs
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.csproj.CopyComplete
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Application\obj\Release\netcoreapp2.2\DigitalMenu.Application.pdb

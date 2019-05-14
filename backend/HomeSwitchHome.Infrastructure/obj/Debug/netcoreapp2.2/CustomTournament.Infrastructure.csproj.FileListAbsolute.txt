@@ -1,0 +1,9 @@
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\bin\Debug\netcoreapp2.2\CustomTournament.Infrastructure.deps.json
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\bin\Debug\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\bin\Debug\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.AssemblyInfoInputs.cache
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.AssemblyInfo.cs
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\CustomTournament\customTournament\CustomTournament.Infrastructure\obj\Debug\netcoreapp2.2\CustomTournament.Infrastructure.csprojAssemblyReference.cache

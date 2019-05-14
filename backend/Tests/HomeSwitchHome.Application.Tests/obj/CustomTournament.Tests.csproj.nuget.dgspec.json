@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Dev\\digitalmenu\\api\\Tests\\CustomTournament.Application.Tests\\CustomTournament.Tests.csproj": {}
+  },
+  "projects": {
+    "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\DigitalMenu.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\DigitalMenu.Application.csproj",
+        "projectName": "CustomTournament.Application",
+        "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\DigitalMenu.Application.csproj",
+        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\DigitalMenu.Domain.csproj": {
+                "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\DigitalMenu.Domain.csproj"
+              },
+              "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj": {
+                "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\DigitalMenu.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\DigitalMenu.Domain.csproj",
+        "projectName": "DigitalMenu.Domain",
+        "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\DigitalMenu.Domain.csproj",
+        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj": {
+                "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "NHibernate.Validator": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj",
+        "projectName": "CustomTournament.Infrastructure",
+        "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\DigitalMenu.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\Dev\\digitalmenu\\api\\Tests\\CustomTournament.Application.Tests\\CustomTournament.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Dev\\digitalmenu\\api\\Tests\\CustomTournament.Application.Tests\\CustomTournament.Tests.csproj",
+        "projectName": "CustomTournament.Tests",
+        "projectPath": "E:\\Dev\\digitalmenu\\api\\Tests\\CustomTournament.Application.Tests\\CustomTournament.Tests.csproj",
+        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\digitalmenu\\api\\Tests\\CustomTournament.Application.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\DigitalMenu.Application.csproj": {
+                "projectPath": "E:\\Dev\\digitalmenu\\api\\CustomTournament.Application\\DigitalMenu.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.10.1, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.110, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

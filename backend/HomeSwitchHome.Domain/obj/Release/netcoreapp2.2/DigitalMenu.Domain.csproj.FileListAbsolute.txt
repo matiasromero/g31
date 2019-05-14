@@ -1,0 +1,12 @@
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\bin\Release\netcoreapp2.2\DigitalMenu.Domain.deps.json
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\bin\Release\netcoreapp2.2\DigitalMenu.Domain.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\bin\Release\netcoreapp2.2\DigitalMenu.Domain.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.csprojAssemblyReference.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.csproj.CoreCompileInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.AssemblyInfoInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.AssemblyInfo.cs
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.csproj.CopyComplete
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Domain\obj\Release\netcoreapp2.2\DigitalMenu.Domain.pdb

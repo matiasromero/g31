@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" namespace="DigitalMenu.Domain.Entities" assembly="DigitalMenu.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Category" table="Categories" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="Name" unique="true" />
+    <property name="ImageUrl" />
+    <property name="ThumbnailUrl" />
+    <set name="Products" access="field.camelcase-underscore" table="Category_Products" inverse="true" cascade="all">
+      <key column="CategoryId" />
+      <one-to-many class="Product" />
+    </set>
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="Order" table="Orders" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="DateTime" />
+    <property name="Status" type="NHibernate.Type.EnumStringType`1[[DigitalMenu.Domain.Enumerations.OrderStatus, DigitalMenu.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], NHibernate" />
+    <property name="Remark" />
+    <property name="TotalAmount" />
+    <property name="PaymentMode" type="NHibernate.Type.EnumStringType`1[[DigitalMenu.Domain.Enumerations.PaymentMode, DigitalMenu.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], NHibernate" />
+    <set name="OrderItems" access="field.camelcase-underscore" table="Order_OrderItems" inverse="true" cascade="all">
+      <key column="OrderId" />
+      <one-to-many class="OrderItem" />
+    </set>
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="OrderItem" table="OrderItems" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <many-to-one name="Product" column="ProductId" index="IX_OrderItem_Product" cascade="save-update, persist" foreign-key="FK_OrderItem_Product" />
+    <property name="Quantity" />
+    <property name="UnitPrice" />
+    <many-to-one name="Order" column="OrderId" index="IX_OrderItem_Order" cascade="save-update, persist" foreign-key="FK_OrderItem_Order" />
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="Product" table="Products" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="Name" />
+    <property name="Code" unique="true" />
+    <property name="Description" />
+    <property name="ImageUrl" />
+    <property name="ThumbnailUrl" />
+    <property name="Price" />
+    <many-to-one name="Category" column="CategoryId" index="IX_Product_Category" cascade="save-update, persist" foreign-key="FK_Product_Category" />
+    <property name="IsAvailable" />
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="User" table="Users" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <property name="PasswordHash" />
+    <property name="UserName" unique="true" />
+    <property name="Name" />
+    <property name="Role" />
+    <property name="IsActive" />
+    <property name="CreatedAt" />
+    <property name="CreatedBy" />
+    <property name="UpdatedAt" />
+    <property name="UpdatedBy" />
+  </class>
+  <class name="RefreshToken" table="RefreshTokens" dynamic-update="true" dynamic-insert="true">
+    <id name="Id" type="Int32">
+      <generator class="hilo">
+        <param name="max_lo">100</param>
+      </generator>
+    </id>
+    <version name="Version" />
+    <many-to-one name="User" column="UserId" index="IX_RefreshToken_User" cascade="save-update, persist" foreign-key="FK_RefreshToken_User" />
+    <property name="Token" />
+    <property name="Expiration" />
+  </class>
+</hibernate-mapping>

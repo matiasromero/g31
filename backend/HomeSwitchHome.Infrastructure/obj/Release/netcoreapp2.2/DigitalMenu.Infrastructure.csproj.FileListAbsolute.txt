@@ -1,0 +1,9 @@
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.deps.json
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\bin\Release\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\DigitalMenu.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\DigitalMenu.Infrastructure.AssemblyInfoInputs.cache
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\DigitalMenu.Infrastructure.AssemblyInfo.cs
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\CustomTournament.Infrastructure.dll
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\CustomTournament.Infrastructure.pdb
+E:\Dev\digitalmenu\api\DigitalMenu.Infrastructure\obj\Release\netcoreapp2.2\DigitalMenu.Infrastructure.csprojAssemblyReference.cache

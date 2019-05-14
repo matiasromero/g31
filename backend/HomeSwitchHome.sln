@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9EC2CB43-5FB0-4DBC-84B0-32E60BE80F15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwitchHome.API", "HomeSwitchHome.Api\HomeSwitchHome.API.csproj", "{30C469F1-4F63-48D8-8B9A-02DDF4116F60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwitchHome.Infrastructure", "HomeSwitchHome.Infrastructure\HomeSwitchHome.Infrastructure.csproj", "{27D04A16-91B8-4EC3-9955-E2A6B2AEFF77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwitchHome.Application", "HomeSwitchHome.Application\HomeSwitchHome.Application.csproj", "{A5EC7871-610C-45DF-8AB9-F340958AE495}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwitchHome.Domain", "HomeSwitchHome.Domain\HomeSwitchHome.Domain.csproj", "{CE91DE1A-CD2E-4C59-8AEB-D5272837C1D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwitchHome.Tests", "Tests\HomeSwitchHome.Application.Tests\HomeSwitchHome.Tests.csproj", "{ED430DE6-332B-4C02-A27F-E3B0364F915E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30C469F1-4F63-48D8-8B9A-02DDF4116F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C469F1-4F63-48D8-8B9A-02DDF4116F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C469F1-4F63-48D8-8B9A-02DDF4116F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C469F1-4F63-48D8-8B9A-02DDF4116F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D04A16-91B8-4EC3-9955-E2A6B2AEFF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D04A16-91B8-4EC3-9955-E2A6B2AEFF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D04A16-91B8-4EC3-9955-E2A6B2AEFF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D04A16-91B8-4EC3-9955-E2A6B2AEFF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EC7871-610C-45DF-8AB9-F340958AE495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EC7871-610C-45DF-8AB9-F340958AE495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EC7871-610C-45DF-8AB9-F340958AE495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EC7871-610C-45DF-8AB9-F340958AE495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE91DE1A-CD2E-4C59-8AEB-D5272837C1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE91DE1A-CD2E-4C59-8AEB-D5272837C1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE91DE1A-CD2E-4C59-8AEB-D5272837C1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE91DE1A-CD2E-4C59-8AEB-D5272837C1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED430DE6-332B-4C02-A27F-E3B0364F915E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED430DE6-332B-4C02-A27F-E3B0364F915E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED430DE6-332B-4C02-A27F-E3B0364F915E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED430DE6-332B-4C02-A27F-E3B0364F915E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED430DE6-332B-4C02-A27F-E3B0364F915E} = {9EC2CB43-5FB0-4DBC-84B0-32E60BE80F15}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14C45B2B-AEF7-48AD-9083-C1D70E1A3BA3}
+	EndGlobalSection
+EndGlobal

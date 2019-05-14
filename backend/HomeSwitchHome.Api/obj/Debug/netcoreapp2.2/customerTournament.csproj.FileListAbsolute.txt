@@ -1,0 +1,14 @@
+E:\Dev\CustomTournament\customerTournament\customerTournament\bin\Debug\netcoreapp2.2\customerTournament.deps.json
+E:\Dev\CustomTournament\customerTournament\customerTournament\bin\Debug\netcoreapp2.2\customerTournament.runtimeconfig.json
+E:\Dev\CustomTournament\customerTournament\customerTournament\bin\Debug\netcoreapp2.2\customerTournament.runtimeconfig.dev.json
+E:\Dev\CustomTournament\customerTournament\customerTournament\bin\Debug\netcoreapp2.2\customerTournament.dll
+E:\Dev\CustomTournament\customerTournament\customerTournament\bin\Debug\netcoreapp2.2\customerTournament.pdb
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.csprojAssemblyReference.cache
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.csproj.CoreCompileInputs.cache
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.RazorAssemblyInfo.cache
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.RazorAssemblyInfo.cs
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.AssemblyInfoInputs.cache
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.AssemblyInfo.cs
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.RazorTargetAssemblyInfo.cache
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.dll
+E:\Dev\CustomTournament\customerTournament\customerTournament\obj\Debug\netcoreapp2.2\customerTournament.pdb
