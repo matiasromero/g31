@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import SignIn from '@/components/SignIn'
 import Login from '@/components/Login'
+import abmResidencia from '@/components/abmResidencia'
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +20,10 @@ export default new Router({
     {
       path: '/iniciar-sesion',
       component: Login
+    },
+    {
+      path:'/abmResidencia',
+      component: abmResidencia
     },
 
   ]

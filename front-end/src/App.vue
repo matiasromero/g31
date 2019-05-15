@@ -5,7 +5,8 @@
           <ul>
             <router-link tag="li" router-link-active to="/registrarse"><a>Registrarse </a></router-link>
             <router-link tag="li" router-link-active to="/iniciar-sesion"><a>Iniciar Sesion</a></router-link>    
-          </ul>
+            <router-link tag="li" router-link-active to="/abmResidencia"><a>Residencias</a></router-link>
+					</ul>
       </nav>
       <header id="header" class="col-lg-12">
           <h1>Home SWITCHhome </h1>
