@@ -3,8 +3,8 @@
       <abmResidencia>
       <h3>Residencias</h3>
       <h5>{{titulo}}</h5>
-      </abmResidencia>
-      <input type="text" class="form-control my-3" v-model="resi" v-on:keyup.enter="agregarResidencia">
+      </abmResidencia> 
+      <input type="text" class="form-control my-3" v-model="nombre" v-on:keyup.enter="agregarResidencia">
       <button class="btn btn-primary" @click="agregarResidencia">Agregar</button>
 
   <div class="mt-3" >

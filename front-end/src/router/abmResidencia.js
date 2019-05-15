@@ -4,16 +4,21 @@ const app = new Vue({
     data: {
         titulo: 'Altas Bajas y Modificacion de residencias',
         residencias: [],
-        resi: ''
+        nombre: '',
+        direccion: '',
+        habitaciones: ''
     },
     methods:{  //aqui adentro creamos todos los metodos
         agregarResidencia: function(){
             this.residencias.push({
-                nombre: this.resi,
-                estado: false
+                nombre: this.nombre,
+                direccion: this.direccion,
+                habitaciones: this.habitaciones
             });
             console.log(residencias);
-            this.resi = '';
+            this.nombre = '';
+            this.direccion = '';
+            this.habitaciones = '';
         },
         editarResidencia: function(unaResidencia){
             this.residencias[residencia].estado = true;
