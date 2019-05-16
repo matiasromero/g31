@@ -31,7 +31,7 @@ export default {
 
 <style>
 
-  #app{
+  #content{
 	margin-top: 0 auto;
 	border:1px solid #eee;
 	border-radius: 2px;

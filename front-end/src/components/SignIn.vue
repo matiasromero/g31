@@ -4,22 +4,27 @@
             <div class="row">
                 <div class="col-md-6 signIn-form">
                     <h3>Formulario</h3>
-                    <form>
+                    <form  v-on:submit="checkForm()" >
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre *" required value="" />
+                            <input type="text" class="form-control" placeholder="Nombre *"  required value="" />
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Apellido *" required value="" />
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Contraseña *" required value="" />
+                            <input type="email" class="form-control" placeholder="Email *" required value="" />
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Ingresar" />
+                            <input type="date" class="form-control" placeholder="Fecha Nac *" v-model="fechaNac"  required value="" />
                         </div>
                         <div class="form-group">
-
-                            <a href="#" class="ForgetPwd" value="Login">Olvidaste tu contraseña?</a>
+                            <input type="password" class="form-control" placeholder="Contraseña *" v-model="contraseña" required value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirmar Contraseña *" v-model="confirmar" required value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Registrar" />
                         </div>
                     </form>
                 </div>
@@ -29,6 +34,11 @@
 </template>
 
 <script>
+
+export default{
+    
+}
+
 
 </script>
 
