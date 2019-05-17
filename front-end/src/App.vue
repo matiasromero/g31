@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="col-lg-12">
+  <div id="App" class="col-lg-12">
 
        <nav id="nav" class="col-lg-12">
           <ul>
@@ -7,7 +7,7 @@
             <router-link tag="li" router-link-active to="/iniciar-sesion"><a>Iniciar Sesion</a></router-link>    
             <router-link tag="li" router-link-active to="/abmResidencia"><a>Residencias</a></router-link>
 					</ul>
-      </nav>
+        </nav>
       <header id="header" class="col-lg-12">
           <h1>Home SWITCHhome </h1>
       </header>
