@@ -10,7 +10,7 @@
         <hot-sale></hot-sale>
     </div>
     <br>
-    <div id="residences" class="col-lg-11">
+    <div id="residences" class="col-lg-12">
         <residence></residence> <residence></residence> <residence></residence> <residence></residence> <residence></residence>
 
     </div>
@@ -25,12 +25,20 @@
 import Residence from '@/components/Residence.vue'
 import HotSale from '@/components/hotSale.vue'
 
+
 export default{
-    name: 'home',
+    name: 'Home',
+    data() {
+        return {
+            post: []
+        }
+    },
     components: {
         Residence,
         HotSale
-    }
+    },
+
+
 }
 
 </script>
@@ -44,7 +52,7 @@ export default{
     }
 
     #residences{
-        background-color: green;
+       
         padding: 70px;
     }
 

@@ -1,9 +1,14 @@
 <template>
 
-    <router-link tag="div" id="residence" router-link-active to="/residencia:id"><a>detalles</a>
+    <router-link tag="div"  router-link-active to="/residencia:id" class="row" ><a></a>
+    <div v-for="post in posts"  class="col-sm"  id="residence">
+
+
+     <img v-bind:src="post.thumbnailUrl"   width="150" height="150"/> 
     
-    <h2>IMAGEN</h2>
-    <h3>nombre residencia</h3>
+    </div>
+    
+   
 
     </router-link>
 
@@ -13,8 +18,25 @@
 
 <script>
 
+import axios from 'axios'
+
 export default {
-  name: 'Residence'
+
+   data() {
+        return {
+            posts: []
+        }
+    },
+    mounted(){
+        let vue = this;
+        axios.get('https://jsonplaceholder.typicode.com/photos')
+        .then( function( response ) {
+            vue. posts = response.data;
+            console.log(vue.posts);
+        }) 
+    
+    }
+
 }
 
 
@@ -22,12 +44,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
- #residence{
-    padding: 30px;
-    background-color: palegreen;
+ #residence {
+    padding: 10px;
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 10px;
+   
   
 }
 
