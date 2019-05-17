@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="col-lg-12">
+  <div id="App" class="col-lg-12">
 
        
       <header id="header" class="col-lg-12">
