@@ -1,16 +1,17 @@
 <template>
   <div id="app" class="col-lg-12">
 
-       <nav id="nav" class="col-lg-12">
-          <ul>
-            <router-link tag="li" router-link-active to="/registrarse"><a>Registrarse </a></router-link>
-            <router-link tag="li" router-link-active to="/iniciar-sesion"><a>Iniciar Sesion</a></router-link>    
-            <router-link tag="li" router-link-active to="/abmResidencia"><a>Residencias</a></router-link>
-					</ul>
-      </nav>
+       
       <header id="header" class="col-lg-12">
           <h1>Home SWITCHhome </h1>
       </header>
+		
+			<nav class="nav  justify-content-end" id="nav" >
+						<router-link tag="li" router-link-active to="/iniciar-sesion"><a>Iniciar Sesion</a></router-link>   
+            <router-link tag="li" router-link-active to="/registrarse"><a>Registrarse </a></router-link>
+            
+          <!--  <router-link tag="li" router-link-active to="/abmResidencia"><a>Residencias</a></router-link> -->		
+      </nav>
 
       <section id="main" class="col-lg-12">
         <!-- Componente actual -->
@@ -62,19 +63,12 @@ export default {
 
 }
 
-#nav ul{
-	list-style: none;
-	margin: 0px;
-	padding-left: 20px;
+
+#nav li{
+	margin-left: 10px;
 }
 
-#nav ul li{
-	float: right;
-	margin-right: 20px;
-
-}
-
-#nav ul li a{
+#nav  li a{
 	display: block;
 	color: white;
 	height: 30px;
@@ -86,7 +80,7 @@ export default {
 
 }
 
-#nav ul li a:hover{
+#nav  li a:hover{
 	text-decoration: none;
 	background: rgb(103, 104, 107);
 }

@@ -4,7 +4,9 @@ import Index from '@/components/Index'
 import SignIn from '@/components/SignIn'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
-import ResidenceDetail from '@/components/ResidenceDetail'
+import CRUDResidences from '@/components/CRUDResidences'
+import AddResidence from '@/components/AddResidence'
+import EditResidence from '@/components/EditResidence'
 import abmResidencia from '@/components/abmResidencia'
 Vue.use(Router)
 
@@ -29,9 +31,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/residencia:id',
-      name: ResidenceDetail,
-      component: ResidenceDetail
+      path: '/administrar-Residencias',
+      name: CRUDResidences,
+      component: CRUDResidences
+    },
+    {
+      path: '/agregar-residencia',
+      name: AddResidence,
+      component: AddResidence
+    },
+    {
+      path: '/editar-residencia',
+      name: EditResidence,
+      component: EditResidence
     },
     {
       path:'/abmResidencia',

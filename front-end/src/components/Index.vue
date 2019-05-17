@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    Test
+    <img v-bind:src="'./assets/Logos/HSH-Complete.svg'"  /> 
   </div>
 </template>
 

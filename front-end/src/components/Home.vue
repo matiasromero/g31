@@ -2,17 +2,37 @@
 
 <div id="start">
 
-    <div id="hotSales" class="col-lg-11">
-        <hot-sale></hot-sale>
-        <hot-sale></hot-sale>
-        <hot-sale></hot-sale>
-        <hot-sale></hot-sale>
-        <hot-sale></hot-sale>
+    <div id="hotSales" class="col-lg-12">
+      
     </div>
     <br>
-    <div id="residences" class="col-lg-12">
-        <residence></residence> <residence></residence> <residence></residence> <residence></residence> <residence></residence>
+    <div id="residences" >
 
+        <div class="container col-lg-11 ">
+            <div class="card "  >
+                <div class="card-header"><i class="fa fa-fw fa-hammer"></i> <strong> Subastas</strong>  </div>
+                <div class="card-body">
+                    <div v-for="post in posts" v-bind:key="post.id"   id="residence">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img v-bind:src="post.thumbnailUrl"   width="150" height="150"/> 
+                            </div>
+                            <div class="col-sm-2">
+                                	<a href="" class="btn btn-danger"><i class="fa fa-fw fa-certificate"></i> Pujar</a>
+                            </div>
+                             <div class="col-sm-2">
+                                	<h4>Valor Actual </h4>
+                                    <h3>$999.99</h3>
+                            </div>
+                        </div>
+                    <hr>
+                    
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
@@ -21,6 +41,8 @@
 </template>
 
 <script>
+
+import axios from 'axios'
 
 import Residence from '@/components/Residence.vue'
 import HotSale from '@/components/hotSale.vue'
@@ -34,9 +56,17 @@ export default{
         }
     },
     components: {
-        Residence,
         HotSale
     },
+    mounted(){
+        let vue = this;
+        axios.get('https://jsonplaceholder.typicode.com/photos')
+        .then( function( response ) {
+            vue. posts = response.data;
+            console.log(vue.posts);
+        }) 
+    
+    }
 
 
 }
@@ -46,9 +76,7 @@ export default{
 <style>
 
     #hotSales{
-        background-color: cornflowerblue;
-        padding: 70px;
-        margin-bottom: 50px;
+       
     }
 
     #residences{

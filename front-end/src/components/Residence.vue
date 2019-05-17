@@ -1,7 +1,7 @@
 <template>
 
     <router-link tag="div"  router-link-active to="/residencia:id" class="row" ><a></a>
-    <div v-for="post in posts"  class="col-sm"  id="residence">
+    <div v-for="post in posts" v-bind:key="post.id"  class="col-sm"  id="residence">
 
 
      <img v-bind:src="post.thumbnailUrl"   width="150" height="150"/> 
