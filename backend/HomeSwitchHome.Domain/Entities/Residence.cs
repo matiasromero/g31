@@ -12,17 +12,14 @@ namespace HomeSwitchHome.Domain.Entities
 
         [NotNullNotEmpty, Length(50)]
         public virtual string Name { get; set; }
-
-        [NotNullNotEmpty, Length(10)]
-        public virtual string Code { get; set; }
+        public virtual string Description { get; set; }
 
         [Length(500)]
-        public virtual string Description { get; set; }
+        public virtual string Address { get; set; }
 
         public virtual string ImageUrl { get; set; }
         public virtual string ThumbnailUrl { get; set; }
 
-        public virtual decimal Price { get; set; }
 
         public virtual bool IsAvailable { get; set; }
     }

@@ -104,7 +104,8 @@ namespace HomeSwitchHome.API.Controllers.V1
                 token_type = "Bearer",
                 expires_in = (int)TimeSpan.FromMinutes(_config.JWT_EXPIRE_MINUTES).TotalSeconds,
                 user_id = user.Id,
-                user_name = user.Name
+                user_name = user.Name,
+                user_role = user.Role
             };
         }
     }

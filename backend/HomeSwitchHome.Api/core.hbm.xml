@@ -8,11 +8,10 @@
     </id>
     <version name="Version" />
     <property name="Name" />
-    <property name="Code" unique="true" />
     <property name="Description" />
+    <property name="Address" unique="true" />
     <property name="ImageUrl" />
     <property name="ThumbnailUrl" />
-    <property name="Price" />
     <property name="IsAvailable" />
     <property name="CreatedAt" />
     <property name="CreatedBy" />

@@ -12,6 +12,7 @@ using System;
 using System.IO;
 using System.Linq;
 using HomeSwitchHome.Application.Models.Residences;
+using HomeSwitchHome.Application.Services.Residences;
 using ImagesUtils = HomeSwitchHome.API.Utils.ImagesUtils;
 
 namespace HomeSwitchHome.API.Controllers.V1
@@ -39,8 +40,7 @@ namespace HomeSwitchHome.API.Controllers.V1
             if (ModelState.IsValid == false)
                 return BadRequest("Invalid Request");
 
-            var product = _residencesService.Create(request.Name, request.Code, request.Description, request.Price,
-                                                  request.IsAvailable);
+            var residence = _residencesService.Create(request.Name, request.Address, request.Description);
 
             var file = request.File;
 
@@ -57,8 +57,8 @@ namespace HomeSwitchHome.API.Controllers.V1
                 var defaultThumbnail = Path.Combine(Directory.GetCurrentDirectory(),
                                                     "Resources", "images", "residence_thumb.jpg");
 
-                fileName = product.Id + Path.GetExtension(defaultImage);
-                fileNameThumb = product.Id + "_thumb" + Path.GetExtension(defaultThumbnail);
+                fileName = residence.Id + Path.GetExtension(defaultImage);
+                fileNameThumb = residence.Id + "_thumb" + Path.GetExtension(defaultThumbnail);
 
                 System.IO.File.Copy(defaultImage, Path.Combine(uploadFilesPath, fileName), true);
                 System.IO.File.Copy(defaultThumbnail, Path.Combine(uploadFilesPath, fileNameThumb), true);
@@ -70,14 +70,14 @@ namespace HomeSwitchHome.API.Controllers.V1
                 if (ImagesUtils.IsValid(file.FileName) == false)
                     return BadRequest("Invalid file type.");
 
-                UploadImages(product, file, uploadFilesPath, out fileName, out fileNameThumb);
+                UploadImages(residence, file, uploadFilesPath, out fileName, out fileNameThumb);
             }
 
-            _residencesService.UpdateFileName(product.Id, fileName, fileNameThumb);
+            _residencesService.UpdateFileName(residence.Id, fileName, fileNameThumb);
 
-            Logger.Info("Product created with code: " + request.Code + " -> id: " + product.Id);
+            Logger.Info("Product created with code: " + request.Name + " -> id: " + residence.Id);
 
-            return Ok(product.Id);
+            return Ok(residence.Id);
         }
 
         [HttpGet(ApiRoutes.Residences.GetAll)]
@@ -89,8 +89,7 @@ namespace HomeSwitchHome.API.Controllers.V1
                 Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                Code = x.Code,
-                Price = x.Price,
+                Address = x.Address,
                 ImageUrl = x.ImageUrl,
                 ThumbUrl = x.ThumbnailUrl,
                 IsAvailable = x.IsAvailable,
@@ -114,9 +113,8 @@ namespace HomeSwitchHome.API.Controllers.V1
             {
                 Id = residence.Id,
                 Name = residence.Name,
-                Code= residence.Code,
+                Address= residence.Address,
                 Description = residence.Description,
-                Price = residence.Price,
                 IsAvailable = residence.IsAvailable,
                 ImageUrl = residence.ImageUrl,
                 ThumbUrl = residence.ThumbnailUrl,
@@ -142,8 +140,7 @@ namespace HomeSwitchHome.API.Controllers.V1
                 return NotFound("Product not found");
 
 
-            _residencesService.Update(id, request.Name, request.Code,
-                                    request.Description, request.Price, request.IsAvailable);
+            _residencesService.Update(id, request.Name, request.Address, request.Description, request.IsAvailable);
 
             var file = request.File;
 
@@ -162,7 +159,7 @@ namespace HomeSwitchHome.API.Controllers.V1
                 _residencesService.UpdateFileName(id, fileName, fileNameThumb);
             }
 
-            Logger.Info("Residence updated with code: " + request.Code + " -> id: " + residence.Id);
+            Logger.Info("Residence updated with name: " + request.Name + " -> id: " + residence.Id);
 
             return Ok(residence.Id);
         }

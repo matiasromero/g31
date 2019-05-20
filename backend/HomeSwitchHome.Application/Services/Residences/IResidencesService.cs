@@ -1,24 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using HomeSwitchHome.Application.Models.Products;
 using HomeSwitchHome.Application.Models.Residences;
 using HomeSwitchHome.Domain.Entities;
 using HomeSwitchHome.Infrastructure.Utils;
 using NHibernate;
 
-namespace HomeSwitchHome.Application.Services.Users
+namespace HomeSwitchHome.Application.Services.Residences
 {
     public interface IResidencesService
     {
-        Residence Create(string name, string code, string description,
-                       decimal price, bool isAvailable);
+        Residence Create(string name, string address, string description);
 
         IEnumerable<Residence> GetAll(GetResidencesFilter filter);
         Residence Get(int id);
         Residence Get(GetResidencesFilter filter);
 
-        void Update(int id, string name, string code, string description,
-                    decimal price, bool isAvailable);
+        void Update(int id, string name, string address, string description, bool isAvailable);
 
         bool Exist(int id);
         void UpdateFileName(int id, string fileName, string thumb);
@@ -40,15 +37,13 @@ namespace HomeSwitchHome.Application.Services.Users
             _sessionFactory = sessionFactory;
         }
 
-        public Residence Create(string name, string code, string description,
-                              decimal price, bool isAvailable)
+        public Residence Create(string name, string address, string description)
         {
             var entity = new Residence()
             {
                 Name = name,
-                Code = code,
+                Address = address,
                 Description = description,
-                Price = price
             };
 
             Session.Save(entity);
@@ -86,16 +81,14 @@ namespace HomeSwitchHome.Application.Services.Users
             return query.SingleOrDefault();
         }
 
-        public void Update(int id, string name, string code, string description,
-                           decimal price, bool isAvailable)
+        public void Update(int id, string name, string address, string description, bool isAvailable)
         {
-            var product = Session.Get<Residence>(id);
-            product.Name = name;
-            product.Code = code;
-            product.Description = description;
-            product.Price = price;
-            product.IsAvailable = isAvailable;
-            Session.Save(product);
+            var residence = Session.Get<Residence>(id);
+            residence.Name = name;
+            residence.Address = address;
+            residence.Description = description;
+            residence.IsAvailable = isAvailable;
+            Session.Save(residence);
         }
 
         public void Delete(int id)
@@ -115,9 +108,6 @@ namespace HomeSwitchHome.Application.Services.Users
                 query = query.Where(x => x.Id == filter.Id);
 
             if (filter.Name.IsNullOrEmpty() == false)
-                query = query.Where(x => x.Name.Contains(filter.Name));
-
-            if (filter.Code.IsNullOrEmpty() == false)
                 query = query.Where(x => x.Name.Contains(filter.Name));
 
             if (filter.IsAvailable.HasValue)

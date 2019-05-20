@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {}
+    "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {
+    "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj",
+        "projectUniqueName": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj",
         "projectName": "HomeSwitchHome.Domain",
-        "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj",
+        "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj",
         "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\obj\\",
+        "outputPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
-                "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj"
+              "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
+                "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
+    "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
         "projectName": "HomeSwitchHome.Infrastructure",
-        "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
+        "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\obj\\",
+        "outputPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

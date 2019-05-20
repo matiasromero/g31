@@ -10,3 +10,15 @@ D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\H
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.csproj.CopyComplete
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.dll
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.pdb
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\bin\Debug\netcoreapp2.2\HomeSwitchHome.Domain.deps.json
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\bin\Debug\netcoreapp2.2\HomeSwitchHome.Domain.dll
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\bin\Debug\netcoreapp2.2\HomeSwitchHome.Domain.pdb
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.dll
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.pdb
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.csprojAssemblyReference.cache
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.csproj.CoreCompileInputs.cache
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.AssemblyInfoInputs.cache
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.AssemblyInfo.cs
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.csproj.CopyComplete
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.dll
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Domain\obj\Debug\netcoreapp2.2\HomeSwitchHome.Domain.pdb

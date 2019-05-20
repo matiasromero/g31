@@ -6,3 +6,11 @@ D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Infrastructure\obj\Debug\netcore
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.AssemblyInfo.cs
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.dll
 D:\Devs-Personal\hsh-backend\api\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.pdb
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.deps.json
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.dll
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\bin\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.pdb
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.AssemblyInfoInputs.cache
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.AssemblyInfo.cs
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.dll
+D:\Facultad\ING2\Repo\g31\backend\HomeSwitchHome.Infrastructure\obj\Debug\netcoreapp2.2\HomeSwitchHome.Infrastructure.pdb

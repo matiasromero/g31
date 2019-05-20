@@ -11,7 +11,7 @@ namespace HomeSwitchHome.Domain.Persistence
 
             Id(x => x.Id);
 
-            Property(x => x.Code, x => x.Unique(true));
+            Property(x => x.Address, x => x.Unique(true));
         }
     }
 }

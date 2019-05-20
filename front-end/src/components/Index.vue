@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <img v-bind:src="'./assets/Logos/HSH-Complete.svg'"  /> 
+  <div id="hello">
+    <img width="25%" src="~@/assets/logo.png">
   </div>
 </template>
 
@@ -10,10 +10,11 @@ export default {
   name: 'Home'
 }
 
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+#hello {
+  text-align: center;
+}
 </style>

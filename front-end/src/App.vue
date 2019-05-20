@@ -6,16 +6,20 @@
           <h1>Home SWITCHhome </h1>
       </header>
 		
-			<nav class="nav  justify-content-end" id="nav" >
+			<nav class="nav  justify-content-end" id="nav" v-if="authenticated == false" >
 						<router-link tag="li" router-link-active to="/iniciar-sesion"><a>Iniciar Sesion</a></router-link>   
             <router-link tag="li" router-link-active to="/registrarse"><a>Registrarse </a></router-link>
-            
-          <!--  <router-link tag="li" router-link-active to="/abmResidencia"><a>Residencias</a></router-link> -->		
+      </nav>
+			<nav class="nav  justify-content-end" id="nav" v-if="authenticated" >
+						<router-link tag="li" router-link-active to="/administrar-Residencias"><a>Administrar Residencias</a></router-link>   
+						<li class="nav-item">
+							<a v-on:click="logout()" tag="li">Salir</a>
+						</li>
       </nav>
 
       <section id="main" class="col-lg-12">
         <!-- Componente actual -->
-        <router-view></router-view>
+        <router-view @authenticated="setAuthenticated"></router-view>
       </section>
 
       <footer id="footer">
@@ -26,7 +30,29 @@
 </template>
 <script>
 export default {
-  name: 'App'
+	name: 'App',
+	data() {
+		return {
+			authenticated: false
+		}
+	},
+	mounted() {
+		if (localStorage.getItem('token'))
+			this.authenticated = true;
+	},
+	methods: {
+            setAuthenticated(status) {
+							console.log(status);
+                this.authenticated = status;
+            },
+						logout() {
+								this.authenticated = false;
+								localStorage.removeItem('token');
+                localStorage.removeItem('username');
+								localStorage.removeItem('userid');
+								this.$router.push("/");
+            }
+        }
 }
 </script>
 

@@ -8,6 +8,7 @@
         public int expires_in { get; set; }
 
         public string user_name { get; set; }
+        public string user_role { get; set; }
         public int user_id { get; set; }
     }
 }

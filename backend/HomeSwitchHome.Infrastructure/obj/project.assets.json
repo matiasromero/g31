@@ -3434,11 +3434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
       "projectName": "HomeSwitchHome.Infrastructure",
-      "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
+      "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
-      "outputPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\obj\\",
+      "outputPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -13095,11 +13095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Api\\HomeSwitchHome.API.csproj",
+      "projectUniqueName": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Api\\HomeSwitchHome.API.csproj",
       "projectName": "HomeSwitchHome.API",
-      "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Api\\HomeSwitchHome.API.csproj",
+      "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Api\\HomeSwitchHome.API.csproj",
       "packagesPath": "C:\\Users\\romer\\.nuget\\packages\\",
-      "outputPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Api\\obj\\",
+      "outputPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13120,14 +13120,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj": {
-              "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj"
+            "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj": {
+              "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Application\\HomeSwitchHome.Application.csproj"
             },
-            "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {
-              "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj"
+            "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj": {
+              "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Domain\\HomeSwitchHome.Domain.csproj"
             },
-            "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
-              "projectPath": "D:\\Devs-Personal\\hsh-backend\\api\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj"
+            "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj": {
+              "projectPath": "D:\\Facultad\\ING2\\Repo\\g31\\backend\\HomeSwitchHome.Infrastructure\\HomeSwitchHome.Infrastructure.csproj"
             }
           }
         }
