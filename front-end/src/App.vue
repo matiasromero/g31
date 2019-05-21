@@ -11,7 +11,8 @@
             <router-link tag="li" router-link-active to="/registrarse"><a>Registrarse </a></router-link>
       </nav>
 			<nav class="nav  justify-content-end" id="nav" v-if="authenticated" >
-						<router-link tag="li" router-link-active to="/administrar-Residencias"><a>Administrar Residencias</a></router-link>   
+						<router-link tag="li" router-link-active to="/administrar-Residencias"><a>Administrar Residencias</a></router-link>
+						<router-link tag="li" router-link-active to="/administrar-Subastas"><a>Administrar Subastas</a></router-link>   
 						<li class="nav-item">
 							<a v-on:click="logout()" tag="li">Salir</a>
 						</li>

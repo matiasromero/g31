@@ -7,6 +7,9 @@ import Home from '@/components/Home'
 import CRUDResidences from '@/components/CRUDResidences'
 import AddResidence from '@/components/AddResidence'
 import EditResidence from '@/components/EditResidence'
+import CRUDAuctions from '@/components/CRUDAuctions'
+import AddAuction from '@/components/AddAuction'
+import EditAuction from '@/components/EditAuction'
 Vue.use(Router)
 
 export default new Router({
@@ -43,6 +46,21 @@ export default new Router({
       path: '/editar-residencia/:id',
       name: 'edit-residence',
       component: EditResidence
+    },
+    {
+      path: '/administrar-subastas',
+      name: CRUDAuctions,
+      component: CRUDAuctions
+    },
+    {
+      path: '/agregar-subasta',
+      name: AddAuction,
+      component: AddAuction
+    },
+    {
+      path: '/editar-subasta',
+      name: EditAuction,
+      component: EditAuction
     }
   ]
 })
