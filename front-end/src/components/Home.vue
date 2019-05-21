@@ -21,14 +21,16 @@
                                 <form>
                                 	<a href="" class="btn btn-danger"><i class="fa fa-fw fa-certificate"></i> Pujar</a>
                                     <br><br>
-                                    <input type="number" name="amount" v-model="amount" class="form-control input-sm" placeholder="Monto">
+                                    <input type="number" name="offer" v-model="offer" class="form-control input-sm" placeholder="Monto">
                                 </form>
                             </div>
                             <div class="vl"></div>
                              <div class="col-sm-2">
                                 	<h4>Valor Actual </h4>
                                     <h3>$999.99</h3>
-                                    <a href="detalleSubasta">Detalles</a>
+                                    <input type="hidden" name="currentValue" v-model="currentValue" >
+                                    <a href="/detalle-subasta">Detalles</a>
+    
                             </div>
                         </div>
                     <hr>
@@ -70,8 +72,6 @@ export default{
         }) 
     
     }
-
-
 }
 
 </script>

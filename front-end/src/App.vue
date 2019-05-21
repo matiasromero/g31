@@ -124,6 +124,7 @@ export default {
 	padding-top: 10px;
 	border:1px solid #eee;
 	color: rgb(92, 92, 92);
+	background-color: rgb(184, 186, 190);
 
 }
 
